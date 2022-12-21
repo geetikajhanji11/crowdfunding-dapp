@@ -33,7 +33,7 @@ const FundRiserForm = () => {
         setTargetedContributionAmount("")
         setMinimumContributionAmount("")
         setDeadline("")
-        toastSuccess("Fund rising started 🎉");
+        toastSuccess("Fund raising started 🎉");
       }
 
        const onError = (error) =>{
@@ -55,30 +55,32 @@ const FundRiserForm = () => {
 
   return (
     <>
-        <h1 className="font-sans font-bold text-xl">Start a fund riser fot free</h1>
+        <h1 className="font-sans font-bold text-xl mb-5">Start your Campaign</h1>
         <form onSubmit={(e)=>riseFund(e)}>
             <div className="form-control my-1">
                 <label className="text-sm text-gray-700">Title :</label>
-                <input type="text" placeholder="Type here" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={title} onChange={(e)=>setTitle(e.target.value)} required/>
+                <input type="text" placeholder="Write your campaign title here..." className="form-control-input border-neutral-400 focus:ring-neutral-200" value={title} onChange={(e)=>setTitle(e.target.value)} required/>
             </div>
             <div className="form-control my-1">
                 <label className="text-sm text-gray-700">Description :</label>
-                <textarea placeholder="Type here" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={description} onChange={(e)=>setDescription(e.target.value)} required></textarea>
+                <textarea placeholder="Write your campaign description here..." className="form-control-input border-neutral-400 focus:ring-neutral-200" value={description} onChange={(e)=>setDescription(e.target.value)} required></textarea>
             </div>
             <div className="form-control my-1">
                 <label className="text-sm text-gray-700">Targeted contribution amount :</label>
-                <input type="number" placeholder="Type here" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={targetedContributionAmount} onChange={(e)=>setTargetedContributionAmount(e.target.value)} required/>
+                <input type="number" placeholder="Eg. 5.0 ETH" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={targetedContributionAmount} onChange={(e)=>setTargetedContributionAmount(e.target.value)} required/>
             </div>
             <div className="form-control my-1">
                 <label className="text-sm text-gray-700">Minimum contribution amount :</label>
-                <input type="number" placeholder="Type here" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={minimumContributionAmount} onChange={(e)=>setMinimumContributionAmount(e.target.value)} required/>
+                <input type="number" placeholder="Eg. 0.001 ETH" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={minimumContributionAmount} onChange={(e)=>setMinimumContributionAmount(e.target.value)} required/>
             </div>
             <div className="form-control date-picker my-1">
                 <label className="text-sm text-gray-700">Deadline :</label>
-                <input type="date" placeholder="Type here" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={deadline} onChange={(e)=>setDeadline(e.target.value)} required/>
+                <input type="date" placeholder="dd-mm-yyyy" className="form-control-input border-neutral-400 focus:ring-neutral-200" value={deadline} onChange={(e)=>setDeadline(e.target.value)} required/>
             </div>
 
-            <button className="p-2 w-full bg-[#F56D91] text-white rounded-md hover:bg-[#d15677]" disabled={btnLoading} >{btnLoading?"Loading...":"Rise fund"}</button>
+            <button className="p-2 w-full bg-[#F56D91] text-white rounded-md hover:bg-[#d15677]" disabled={btnLoading} >
+                {btnLoading?"Loading...":"Raise Funds Now!"}
+            </button>
         </form>
     </>
   )

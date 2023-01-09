@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spandan114/Crowdfunding-DAPP.git"
+    "url": "git+https://github.com/geetikajhanji11/crowdfunding-dapp.git"
   },
-  "author": "spandan joshi",
+  "author": "Geetika Jhanji",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spandan114/Crowdfunding-DAPP/issues"
+    "url": "https://github.com/geetikajhanji11/crowdfunding-dapp/issues"
   },
-  "homepage": "https://github.com/spandan114/Crowdfunding-DAPP#readme",
+  "homepage": "https://github.com/geetikajhanji11/crowdfunding-dapp",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.3",

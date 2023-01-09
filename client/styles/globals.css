@@ -3,24 +3,19 @@
 @tailwind utilities;
 
 body{
-    /* background: #F7F5F2; */
     background: #0A91AB;
 }
 
 .slogan-container {
     text-align: center;
-    /* max-inline-size: min-content; */
     margin-top: 80px;
 }
 
 .slogan-container h1 {
-    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Alfa Slab One', cursive;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.6;
     color: #0C2233;
-    /* border: solid; */
-    -webkit-text-stroke: 1px black;
 }
 
 button:disabled{
@@ -29,7 +24,6 @@ button:disabled{
 
 
 .card{
-    /* @apply w-full bg-slate-50 p-3 drop-shadow-md rounded-md lg:p-6 ; */
     @apply w-full bg-[#112B3C] p-3 drop-shadow-md rounded-md lg:p-6 ;
 }
 
@@ -63,6 +57,10 @@ button:disabled{
 
 .form-control-input{
     @apply bg-[#8d8daa18] text-[#D3D3D3] py-2 px-3 focus:outline-none focus:ring w-full rounded my-1 mb-1;
+}
+
+.yellow {
+    color: #FFC045;
 }
 
 .button{

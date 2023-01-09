@@ -1,6 +1,5 @@
 import React from "react";
 import authWrapper from "../helper/authWrapper";
-import FundRiserForm from "../components/FundRiserForm";
 import { useSelector } from "react-redux";
 import FundRiserCard from "../components/FundRiserCard";
 import Loader from "../components/Loader";
@@ -36,7 +35,9 @@ const Discover = () => {
 
       <div className="slogan-container content-center flex-1">
         <h1 className="text-8xl">
-          Donate Support Build
+          <span>Donate</span> <br></br>
+          <span className="yellow">Support</span> <br></br>
+          <span>Impact</span> <br></br>
         </h1>
       </div>
     </div>

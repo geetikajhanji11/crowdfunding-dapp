@@ -1,20 +1,16 @@
 # Crowd funding
 
-https://user-images.githubusercontent.com/55044734/164529677-27af29f2-96d6-4ce6-bb61-c1f0c63a3beb.mp4
+### Project Features 
 
-### Project features :bulb:
-
-- [x] User can start a fundraising.
-- [x] Anyone can contribute.
-- [x] End project if targeted contribution amount reached.
-- [x] Expire project if targeted amount not fulfills between deadline.
-- [x] Contributors can withdraw contributed amount if project expire.
-- [x] Owner need to request contributors for withdraw amount.
-- [x] Owner can withdraw amount if 50% contributors agree.
-- [x] Connect with waller.
+- **Wallet Connect**: It is required for a user to have a cryptocurrency wallet (eg. Metamask) in order to interact with our application. 
+- **Campaign Creation**: A user can create a campaign by providing necessary details such as campaign title, campaign description, image URL, target contribution amount, minimum contribution amount and deadline.
+- **Contributions**: Donors can browse through our application to search for campaigns that they might be interested in. 
+- **Withdrawal Request**: When a vendor wishes to withdraw a certain amount of ether from the pool of money raised so far for their campaign, he has to first create a withdrawal request.
+- **Approve Campaign**: When a vendor makes a request for spending money, all the backers will be notified about the Withdrawal Request. So the contributor needs to approve the request if he wants to. One contributor can give only a single vote.
+- **Finalize Campaign**: If the vendor is able to reach the 50% approval mark, the ether will be directly transmitted to the verified vendor. In the case where the target contribution amount is not reached, the project will be terminated.
 
 
-### Tech stack & packages used 📦
+### Tech Stack
 
 | package                                                             | explain                                                               |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -31,7 +27,16 @@ https://user-images.githubusercontent.com/55044734/164529677-27af29f2-96d6-4ce6-
 
 ----------------
 
-### How to run :runner: :
+
+### Running the Application:
+
+- Configure Metamask Settings
+    ```
+    Network Name: Localhost 8545
+    New RPC URL: http://localhost:8545
+    Chain ID: 31337
+    Currency Symbol: ETH
+    ```
 
 - Run hardhat node
     ```
@@ -51,37 +56,4 @@ https://user-images.githubusercontent.com/55044734/164529677-27af29f2-96d6-4ce6-
     cd client
     npm run dev
     ```
-### Web3.js 
-------------
-- [Load web3](https://web3js.readthedocs.io/en/v1.2.11/web3-eth.html#web3-eth)
-- [Connect with contract](https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#web3-eth-contract)
-    ```
-    new web3.eth.Contract(jsonInterface[, address][, options])
-    ```
-- [Callback promises events](https://web3js.readthedocs.io/en/v1.2.11/callbacks-promises-events.html#callbacks-promises-events)
-    ```
-    .on('transactionHash', function(hash){ ... })
-    .on('error', function(error){ ... })
-    ```
-- [Subscribe to event](https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#contract-events)
-    ```
-    contractName.events.EventName([options][, callback])
-    ```
-- [Fetch all data from contract event](https://web3js.readthedocs.io/en/v1.2.11/web3-eth-contract.html#getpastevents)
-    - <small> An array with the past event Objects, matching the given event name and filter.</small>
-
-    ```
-    contractName.getPastEvents(EventName[, options][, callback])
-    ```
-
-### Hardhat commands
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/deploy.js
-npx hardhat help
-npx hardhat run scripts/deploy.js --network <network name>
 ```

@@ -5,12 +5,12 @@ Crowdfunding provides an easy way to find cash for innovative project ideas. By 
 
 ## Project Features 
 
-- **Wallet Connect**: It is required for a user to have a cryptocurrency wallet (eg. Metamask) in order to interact with our application. 
-- **Campaign Creation**: A user can create a campaign by providing necessary details such as campaign title, campaign description, image URL, target contribution amount, minimum contribution amount and deadline.
-- **Contributions**: Donors can browse through our application to search for campaigns that they might be interested in. 
-- **Withdrawal Request**: When a vendor wishes to withdraw a certain amount of ether from the pool of money raised so far for their campaign, he has to first create a withdrawal request.
-- **Approve Campaign**: When a vendor makes a request for spending money, all the backers will be notified about the Withdrawal Request. So the contributor needs to approve the request if he wants to. One contributor can give only a single vote.
-- **Finalize Campaign**: If the vendor is able to reach the 50% approval mark, the ether will be directly transmitted to the verified vendor. In the case where the target contribution amount is not reached, the project will be terminated.
+* `Wallet Connect`: It is required for a user to have a cryptocurrency wallet (eg. Metamask) in order to interact with our application. 
+* `Campaign Creation`: A user can create a campaign by providing necessary details such as campaign title, campaign description, image URL, target contribution amount, minimum contribution amount and deadline.
+* `Contributions`: Donors can browse through our application to search for campaigns that they might be interested in. 
+* `Withdrawal Request`: When a vendor wishes to withdraw a certain amount of ether from the pool of money raised so far for their campaign, he has to first create a withdrawal request.
+* `Approve Campaign`: When a vendor makes a request for spending money, all the backers will be notified about the Withdrawal Request. So the contributor needs to approve the request if he wants to. One contributor can give only a single vote.
+* `Finalize Campaign`: If the vendor is able to reach the 50% approval mark, the ether will be directly transmitted to the verified vendor. In the case where the target contribution amount is not reached, the project will be terminated.
 
 
 ## Tech Stack

@@ -4,6 +4,7 @@ import FundRiserForm from "../components/FundRiserForm";
 import { useSelector } from "react-redux";
 import FundRiserCard from "../components/FundRiserCard";
 import Loader from "../components/Loader";
+import Head from 'next/head'
 
 const Discover = () => {
 
@@ -11,6 +12,15 @@ const Discover = () => {
 
   return (
     <div className="px-2 py-4 flex flex-col lg:px-12 lg:flex-row ">
+
+    <Head>
+      <title>Crowdfunding DAPP</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"></link>
+    </Head>
+
       <div className="lg:w-7/12 my-2 lg:my-0 lg:mx-2">
         {projectsList !== undefined?
           projectsList.length > 0 ?
@@ -22,6 +32,12 @@ const Discover = () => {
         :
         <Loader/>
       }
+      </div>
+
+      <div className="slogan-container content-center flex-1">
+        <h1 className="text-8xl">
+          Donate Support Build
+        </h1>
       </div>
     </div>
   );

@@ -26,6 +26,7 @@ export const projectDataFormatter = (data,contractAddress) =>{
     contractBalance: data.balance?weiToEther(data.balance):0,
     title:data.title,
     description:data.desc,
+    image:data.image,
     minContribution:weiToEther(data.minContribution),
     goalAmount:weiToEther(data.goalAmount),
     currentAmount:weiToEther(data.currentAmount),
@@ -77,6 +78,7 @@ export const withdrawRequestDataFormatter = (data) =>{
      amount:weiToEther(data.amount),
      status:data.isCompleted?"Completed":"Pending",
      desc:data.description,
+     image:data.image,
      reciptant:data.reciptent
     }
 }

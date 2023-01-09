@@ -7,6 +7,22 @@ body{
     background: #0A91AB;
 }
 
+.slogan-container {
+    text-align: center;
+    /* max-inline-size: min-content; */
+    margin-top: 80px;
+}
+
+.slogan-container h1 {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 900;
+    line-height: 1.6;
+    color: #0C2233;
+    /* border: solid; */
+    -webkit-text-stroke: 1px black;
+}
+
 button:disabled{
     @apply opacity-50 cursor-not-allowed;
 }
@@ -46,7 +62,7 @@ button:disabled{
   }
 
 .form-control-input{
-    @apply bg-[#8d8daa18] text-[#D3D3D3] py-2 px-3 focus:outline-none focus:ring w-full rounded my-1 mb-3;
+    @apply bg-[#8d8daa18] text-[#D3D3D3] py-2 px-3 focus:outline-none focus:ring w-full rounded my-1 mb-1;
 }
 
 .button{

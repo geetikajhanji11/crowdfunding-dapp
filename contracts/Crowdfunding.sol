@@ -20,6 +20,7 @@ event ProjectStarted(
     uint256 noOfContributors,
     string title,
     string desc,
+    string image,
     uint256 currentState
 );
 
@@ -39,12 +40,13 @@ event ContributionReceived(
     uint256 deadline,
     uint256 targetContribution,
     string memory projectTitle,
-    string memory projectDesc
+    string memory projectDesc,
+    string memory image
  ) public {
 
    deadline = deadline;
 
-   Project newProject = new Project(msg.sender,minimumContribution,deadline,targetContribution,projectTitle,projectDesc);
+   Project newProject = new Project(msg.sender,minimumContribution,deadline,targetContribution,projectTitle,projectDesc,image);
    projects.push(newProject);
  
  emit ProjectStarted(
@@ -57,6 +59,7 @@ event ContributionReceived(
     0,
     projectTitle,
     projectDesc,
+    image,
     0
  );
 

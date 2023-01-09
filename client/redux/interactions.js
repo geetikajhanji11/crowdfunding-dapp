@@ -34,10 +34,11 @@ export const loadCrowdFundingContract = async(web3,dispatch) =>{
 }
 
 // Start fund raising project
+// image here
 export const startFundRaising = async(web3,CrowdFundingContract,data,onSuccess,onError,dispatch) =>{
-  const {minimumContribution,deadline,targetContribution,projectTitle,projectDesc,account} = data;
+  const {minimumContribution,deadline,targetContribution,projectTitle,projectDesc,image,account} = data;
 
-  await CrowdFundingContract.methods.createProject(minimumContribution,deadline,targetContribution,projectTitle,projectDesc).send({from:account})
+  await CrowdFundingContract.methods.createProject(minimumContribution,deadline,targetContribution,projectTitle,projectDesc,image).send({from:account})
   .on('receipt', function(receipt){ 
 
     const projectsReceipt = receipt.events.ProjectStarted.returnValues;

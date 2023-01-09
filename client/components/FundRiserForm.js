@@ -15,6 +15,7 @@ const FundRiserForm = () => {
 
     const [title,setTitle] = useState("")
     const [description,setDescription] = useState("")
+    const [image,setImage] = useState("")
     const [targetedContributionAmount,setTargetedContributionAmount] = useState("")
     const [minimumContributionAmount,setMinimumContributionAmount] = useState("")
     const [deadline,setDeadline] = useState("")
@@ -30,6 +31,7 @@ const FundRiserForm = () => {
         setBtnLoading(false)
         setTitle("")
         setDescription("")
+        setImage("")
         setTargetedContributionAmount("")
         setMinimumContributionAmount("")
         setDeadline("")
@@ -47,6 +49,7 @@ const FundRiserForm = () => {
         targetContribution:etherToWei(targetedContributionAmount),
         projectTitle:title,
         projectDesc:description,
+        image:image,
         account:account
        }
 
@@ -72,6 +75,14 @@ const FundRiserForm = () => {
                     Description :
                 </label>
                 <textarea placeholder="Write your campaign description here..." className="form-control-input border-neutral-400 focus:ring-neutral-200" value={description} onChange={(e)=>setDescription(e.target.value)} required></textarea>
+            </div>
+
+            {/* IMAGE */}
+            <div className="form-control my-1">
+                <label className="input-label">
+                    Image URL :
+                </label>
+                <input type="text" placeholder="Write your image URL here..." className="form-control-input border-neutral-400 focus:ring-neutral-200" value={image} onChange={(e)=>setImage(e.target.value)} required/>
             </div>
 
             <div className="form-control my-1">

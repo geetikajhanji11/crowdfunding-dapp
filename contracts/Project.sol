@@ -40,6 +40,7 @@ contract Project{
     uint256 public noOfContributers;
     string public projectTitle;
     string public projectDes;
+    string public projectImage;
     State public state = State.Fundraising; 
 
     mapping (address => uint) public contributiors;
@@ -94,7 +95,8 @@ contract Project{
        uint256 _deadline,
        uint256 _targetContribution,
        string memory _projectTitle,
-       string memory _projectDes
+       string memory _projectDes,
+       string memory _projectImage
    ) {
        creator = payable(_creator);
        minimumContribution = _minimumContribution;
@@ -102,6 +104,7 @@ contract Project{
        targetContribution = _targetContribution;
        projectTitle = _projectTitle;
        projectDes = _projectDes;
+       projectImage = _projectImage;
        raisedAmount = 0;
    }
 
@@ -210,6 +213,7 @@ contract Project{
     uint256 currentAmount, 
     string memory title,
     string memory desc,
+    string memory image,
     State currentState,
     uint256 balance
     ){
@@ -221,6 +225,7 @@ contract Project{
         currentAmount=raisedAmount;
         title=projectTitle;
         desc=projectDes;
+        image=projectImage;
         currentState=state;
         balance=address(this).balance;
     }

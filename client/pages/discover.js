@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import FundRiserCard from "../components/FundRiserCard";
 import Loader from "../components/Loader";
 
-const Dashboard = () => {
+const Discover = () => {
 
   const projectsList = useSelector(state=>state.projectReducer.projects)
 
@@ -23,11 +23,8 @@ const Dashboard = () => {
         <Loader/>
       }
       </div>
-      <div className="card lg:w-5/12 h-fit my-4">
-          <FundRiserForm/>
-      </div>
     </div>
   );
 };
 
-export default authWrapper(Dashboard);
+export default authWrapper(Discover);

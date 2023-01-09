@@ -33,7 +33,7 @@ const FundRiserForm = () => {
         setTargetedContributionAmount("")
         setMinimumContributionAmount("")
         setDeadline("")
-        toastSuccess("Fund raising started 🎉");
+        toastSuccess("Fund raising has started 🎉");
       }
 
        const onError = (error) =>{

@@ -13,7 +13,7 @@ export default function Home() {
   const connect = () =>{
     const onSuccess = () =>{
       loadAccount(web3,dispatch)
-      router.push('/dashboard')
+      router.push('/discover')
     }
     connectWithWallet(onSuccess)
   }
@@ -23,7 +23,7 @@ export default function Home() {
       if(web3){
         const account = await loadAccount(web3,dispatch)
         if(account.length > 0){
-          router.push('/dashboard')
+          router.push('/discover')
         }
       }
      })()

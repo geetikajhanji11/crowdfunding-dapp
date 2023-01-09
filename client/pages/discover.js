@@ -18,7 +18,7 @@ const Discover = () => {
               <FundRiserCard props={data} key={i}/>
             ))
           :
-          <h1 className="text-2xl font-bold text-gray-500 text-center font-sans">No project found !</h1>
+          <h1 className="text-2xl font-bold text-[#E8F9FD] text-center font-sans">No Projects found!</h1>
         :
         <Loader/>
       }

@@ -68,17 +68,17 @@ const WithdrawRequestCard = ({props,withdrawReq, setWithdrawReq,contractAddress}
   return (
     <div className="card relative overflow-hidden my-4">
     <div className={`ribbon ${colorMaker(props.status)}`}>{props.status}</div>
-    <h1 className="font-sans text-xl text-gray font-semibold">{props.desc}</h1>
+    <h1 className="font-sans text-xl text-[#FFC045] font-semibold">{props.desc}</h1>
     <div className="flex flex-col lg:flex-row">
       <div className="inner-card my-6 w-full lg:w-2/5">
-        <p className="text-md font-bold font-sans text-gray">Requested amount</p>
-        <p className="text-sm font-bold font-sans text-gray-600 ">{props.amount} ETH </p>
-        <p className="text-md font-bold font-sans text-gray">Total vote</p>
-        <p className="text-sm font-bold font-sans text-gray-600 ">{props.totalVote}</p>
+        <p className="text-md white-heading">Requested amount</p>
+        <p className="blue-subheading">{props.amount} ETH </p>
+        <p className="text-md white-heading">Total vote</p>
+        <p className="blue-subheading ">{props.totalVote}</p>
       </div>
       <div className="inner-card my-6 w-full lg:w-3/5">
-        <p className="text-md font-bold font-sans text-gray">Reciptant address</p>
-        <p className="text-sm font-bold font-sans text-gray-600 w-40 truncate ">{props.reciptant}</p>
+        <p className="text-md white-heading">Reciptant address</p>
+        <p className="blue-subheading w-40 truncate ">{props.reciptant}</p>
         {
             account === props.reciptant?
             <button className="withdraw-button" onClick={()=>withdrawBalance(props.requestId)} disabled={props.status==="Completed"}>

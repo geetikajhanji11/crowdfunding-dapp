@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body{
-    background: #F7F5F2;
+    /* background: #F7F5F2; */
+    background: #0A91AB;
 }
 
 button:disabled{
@@ -12,7 +13,16 @@ button:disabled{
 
 
 .card{
-    @apply w-full bg-slate-50 p-3 drop-shadow-md rounded-md lg:p-6 ;
+    /* @apply w-full bg-slate-50 p-3 drop-shadow-md rounded-md lg:p-6 ; */
+    @apply w-full bg-[#112B3C] p-3 drop-shadow-md rounded-md lg:p-6 ;
+}
+
+.white-heading{
+    @apply font-bold font-sans text-[#E8F9FD];
+}
+
+.blue-subheading {
+    @apply text-sm font-bold font-sans text-[#0A91AB];
 }
 
 .ribbon{
@@ -23,12 +33,20 @@ button:disabled{
     @apply bg-[#8d8daa18] p-3 mx-1 rounded-sm;
 }
 
+.my-contributions{
+    @apply bg-[#0C2233] p-3 mx-1 rounded-lg my-2 flex flex-row w-full lg:w-1/4;
+}
+
+.input-label {
+    @apply text-sm font-semibold text-[#F3EFE0]
+}
+
 .input{
     @apply border border-emerald-300 py-2 px-3 focus:outline-none focus:ring focus:ring-emerald-300 w-full;
   }
 
 .form-control-input{
-    @apply border py-2 px-3 focus:outline-none focus:ring w-full rounded my-1;
+    @apply bg-[#8d8daa18] text-[#D3D3D3] py-2 px-3 focus:outline-none focus:ring w-full rounded my-1 mb-3;
 }
 
 .button{
@@ -36,12 +54,13 @@ button:disabled{
 }
   
 .progress{
-    @apply bg-[#F56D91] w-full text-xs font-medium text-white text-center p-0.5 leading-none rounded-l-full;
+    @apply bg-[#FFC045] w-full text-xs font-bold text-[#0C2233] text-center p-0.5 leading-none rounded-l-full;
 }
 
 .date-picker input {
     box-sizing: border-box;
     position: relative;
+    color: darkgray;
   }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -55,9 +74,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     right: 0;
     top: 0;
     width: auto;
-  }
+}
 
-  .withdraw-button{
+.withdraw-button{
     @apply border bg-emerald-500 text-white rounded-md p-2 mt-1  font-bold hover:bg-emerald-600 active:bg-emerald-700 focus:outline-none focus:ring focus:ring-emerald-300;
     width: 100%;
-  }
+}
+

@@ -21,6 +21,8 @@ const MyContributions = () => {
             }
         })();
 
+        console.log(contributions)
+
     }, [crowdFundingContract])
 
   return (
@@ -30,18 +32,18 @@ const MyContributions = () => {
             contributions.length > 0?
                 contributions.map((data,i)=>(
 
-                    <div className='inner-card my-2 flex flex-row w-full lg:w-1/4' key={i}>
-                        <div className='lg:w-1/5'>
-                            <div className='p-6 w-8 h-8 mx-auto my-auto rounded-md bg-slate-300 '></div>
+                    <div className='my-contributions' key={i}>
+                        <div className='lg:w-1/5 mr-2'>
+                            <div className='p-6 w-8 h-8 mx-auto my-auto rounded-md bg-white '></div>
                         </div>
                         <div className='lg:w-4/5'>
-                            <Link href={`/project-details/${data.projectAddress}`}><p className='text-md font-bold text-gray-800 w-40 truncate cursor-pointer '>{data.projectAddress}</p></Link>
-                            <p className='text-sm font-bold text-gray-500'>{data.amount} ETH</p>
+                            <Link href={`/project-details/${data.projectAddress}`}><p className='text-md font-bold text-[#E8F9FD] w-40 truncate cursor-pointer '>{data.projectAddress}</p></Link>
+                            <p className='text-sm font-bold text-[#0A91AB]'>{data.amount} ETH</p>
                         </div>
                     </div>
                 ))
             :
-            <p className='text-center'>You haven't contributed in any project yet!</p>
+            <p className='text-2xl font-bold text-[#E8F9FD] text-center font-sans'>You haven't contributed in any project yet!</p>
         :
         <div className="w-full"> <Loader/></div>
        

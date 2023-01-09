@@ -12,7 +12,8 @@ const Navbar = () => {
   return (
     <div>
         {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
-        <nav className="bg-[#F7F5F2]">
+        {/* <nav className="bg-[#F7F5F2]"> */}
+        <nav className="bg-[#065471]">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -24,18 +25,28 @@ const Navbar = () => {
             </div>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                      <h4 className='font-mono text-xl text-greay font-bold hidden lg:block'>CROWDFUNDING</h4>
+                        <h4 className='text-3xl text-[#FFC045] font-bold hidden lg:block'>
+                            CROWDFUNDING
+                        </h4>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
-                <Link href="/discover"  ><span className={`${router.pathname === "/discover"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`}>Discover Projects</span></Link>
-                    <Link href="/create-campaign"  ><span className={`${router.pathname === "/create-campaign"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`}>Create Campaign</span></Link>
-                    <Link href="/my-contributions"><span className={`${router.pathname === "/my-contributions"?"bg-[#F7C984]":""} text-greay px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#F7C984] hover:text-greay`}>My Contributions</span></Link>
+
+                    {/* DISCOVER PROJECT */}
+                    <Link href="/discover"><span className={`${router.pathname === "/discover"?"bg-[#0C2233]":""} text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#0C2233] hover:text-greay`}>
+                        Discover Projects</span>
+                    </Link>
+
+                    {/* CREATE CAMPAIGN */}
+                    <Link href="/create-campaign"  ><span className={`${router.pathname === "/create-campaign"?"bg-[#0C2233]":""} text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#0C2233] hover:text-greay`}>Create Campaign</span></Link>
+                    
+                    {/* MY CONTRIBUTIONS */}
+                    <Link href="/my-contributions"><span className={`${router.pathname === "/my-contributions"?"bg-[#0C2233]":""} text-white px-3 py-2 rounded-md text-sm font-medium hover:cursor-pointer hover:bg-[#0C2233] hover:text-greay`}>My Contributions</span></Link>
                 </div>
                 </div>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" className="p-1 w-40 truncate rounded-full text-greay hover:text-greay ">
+                <button type="button" className="p-1 w-40 truncate rounded-full text-white hover:text-white ">
                   <span >{account}</span>
                 </button>
 

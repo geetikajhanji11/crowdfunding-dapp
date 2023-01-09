@@ -56,7 +56,7 @@ const FundRiserCard = ({props,pushWithdrawRequests}) => {
     const contributionAmount = etherToWei(amount);
 
     const data = {
-      description:`${amount} ETH requested for withdraw`,
+      description:`${amount} ETH Requested For WITHDRAW`,
       amount:contributionAmount,
       recipient:account,
       account:account
@@ -80,21 +80,23 @@ const FundRiserCard = ({props,pushWithdrawRequests}) => {
     <div className="card relative overflow-hidden my-4">
     <div className={`ribbon ${colorMaker(props.state)}`}>{props.state}</div>
     <Link href={`/project-details/${props.address}`} >
-      <h1 className="font-sans text-xl text-gray font-semibold hover:text-sky-500 hover:cursor-pointer">{props.title}</h1>
+      <h1 className="font-sans text-3xl text-[#0A91AB] font-bold hover:text-sky-500 hover:cursor-pointer">
+        {props.title}
+      </h1>
     </Link>
-    <p className="font-sans text-sm text-stone-800 tracking-tight">{props.description}</p>
+    <p className="font-sans text-sm text-[#D3D3D3] tracking-tight">{props.description}</p>
     <div className="flex flex-col lg:flex-row">
       <div className="inner-card my-6 w-full lg:w-2/5">
-        <p className="text-md font-bold font-sans text-gray">Targeted contribution</p>
-        <p className="text-sm font-bold font-sans text-gray-600 ">{props.goalAmount} ETH </p>
-        <p className="text-md font-bold font-sans text-gray">Deadline</p>
-        <p className="text-sm font-bold font-sans text-gray-600 ">{props.deadline}</p>
+        <p className="text-md white-heading">Targeted contribution</p>
+        <p className="blue-subheading ">{props.goalAmount} ETH </p>
+        <p className="text-md white-heading">Deadline</p>
+        <p className="blue-subheading ">{props.deadline}</p>
       </div>
       <div className="inner-card my-6 w-full lg:w-3/5">
         {
           props.state !== "Successful" ?
           <>
-            <label className="text-sm text-gray-700 font-semibold">Contribution amount :</label>
+            <label className="text-sm text-[#E8F9FD] font-semibold">Contribution amount :</label>
             <div className="flex flex-row">
               <input type="number" placeholder="Type here" value={amount} onChange={(e)=>setAmount(e.target.value)} disabled={btnLoader === props.address} className="input rounded-l-md" />
             
@@ -106,17 +108,19 @@ const FundRiserCard = ({props,pushWithdrawRequests}) => {
               </button>
     
             </div>
-            <p className="text-sm text-red-600"> <span className="font-bold">NOTE : </span> Minimum contribution is {props.minContribution} ETH </p>
+            <p className="text-sm text-[#E8F9FD]"> <span className="font-bold">
+              NOTE : </span> Minimum contribution is {props.minContribution} ETH 
+            </p>
           </>
           :
           <>
-            <p className="text-md font-bold font-sans text-gray">Contract balance</p>
-            <p className="text-sm font-bold font-sans text-gray-600 ">{props.contractBalance} ETH </p>
+            <p className="text-md white-heading">Contract balance</p>
+            <p className="blue-subheading ">{props.contractBalance} ETH </p>
 
             {
               props.creator === account?
               <>
-              <label className="text-sm text-gray-700 font-semibold">Withdraw request :</label>
+              <label className="text-sm text-[#E8F9FD] font-semibold">Withdraw request :</label>
               <div className="flex flex-row">
                 <input type="number" placeholder="Type here" value={amount} onChange={(e)=>setAmount(e.target.value)} disabled={btnLoader === props.address} className="input rounded-l-md" />
                 <button className="button" onClick={()=>requestForWithdraw(props.address)}>

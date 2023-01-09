@@ -1,5 +1,8 @@
 # Crowd funding
 
+Crowdfunding provides an easy way to find cash for innovative project ideas. By incorporating Peer to Peer smart contract for crowdfunding we plan to remove the traditional transaction fees and platform fees normally associated with other crowdfunding platforms. The objective of our project is to create a reliable application so that every new idea gets life. We plan to design a crowdfunding site which is a blockchain based website. We will provide an easy to use interface for everyone to create and post their ideas on this application. These ideas then become public to everyone. Anyone who wishes to support their ideas can contribute. All these processes are done in an interactive manner.
+
+
 ## Project Features 
 
 - **Wallet Connect**: It is required for a user to have a cryptocurrency wallet (eg. Metamask) in order to interact with our application. 

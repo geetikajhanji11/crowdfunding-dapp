@@ -12,16 +12,15 @@
 
 ## Tech Stack
 
-| package                                                             | explain                                                               |
+| Framework / Library                                                 | Usage                                                                 |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [Next.js](https://nextjs.org/docs/getting-started)                  | For building frontend                                                 |
+| [Next.js](https://nextjs.org/docs/getting-started)                  | For frontend                                                          |
 | [solidity](https://docs.soliditylang.org/en/v0.8.13/)               | For writting smart contracts                                          |
-| [tailwind css](https://tailwindcss.com/docs/installation)           | For building design                                                   |       
-| [ether.js](https://docs.ethers.io/v5/)                              | Web3 client (contract testing ).                                      |
-| [web3.js](https://www.npmjs.com/package/web3)                       | Web3 client (Frontend Next.js).                                       |
-| [Chai](https://www.npmjs.com/package/chai)                          | javascript testing framework.                                         |
-| [react-toastify](https://www.npmjs.com/package/react-toastify)      | For Notification.                                                     |   
-| [hardhat](https://www.npmjs.com/package/hardhat)                    | Ethereum development environment.                                     | 
+| [tailwind css](https://tailwindcss.com/docs/installation)           | For designing UI                                                      |       
+| [ether.js](https://docs.ethers.io/v5/)                              | Web3 client (contract testing)                                        |
+| [web3.js](https://www.npmjs.com/package/web3)                       | Web3 client (Frontend Next.js)                                        |
+| [Chai](https://www.npmjs.com/package/chai)                          | Javascript testing framework                                          | 
+| [hardhat](https://www.npmjs.com/package/hardhat)                    | Ethereum development environment                                      | 
 | [Redux](https://www.npmjs.com/package/hardhat)                      | For managing and centralizing application state.                      |   
 
 

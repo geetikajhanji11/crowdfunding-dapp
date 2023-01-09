@@ -1,6 +1,6 @@
 # Crowd funding
 
-### Project Features 
+## Project Features 
 
 - **Wallet Connect**: It is required for a user to have a cryptocurrency wallet (eg. Metamask) in order to interact with our application. 
 - **Campaign Creation**: A user can create a campaign by providing necessary details such as campaign title, campaign description, image URL, target contribution amount, minimum contribution amount and deadline.
@@ -10,7 +10,7 @@
 - **Finalize Campaign**: If the vendor is able to reach the 50% approval mark, the ether will be directly transmitted to the verified vendor. In the case where the target contribution amount is not reached, the project will be terminated.
 
 
-### Tech Stack
+## Tech Stack
 
 | package                                                             | explain                                                               |
 | ------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -28,7 +28,7 @@
 ----------------
 
 
-### Running the Application:
+## Running the Application:
 
 - Configure Metamask Settings
     ```

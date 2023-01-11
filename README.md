@@ -2,6 +2,7 @@
 
 Crowdfunding provides an easy way to find cash for innovative project ideas. By incorporating Peer to Peer smart contract for crowdfunding we plan to remove the traditional transaction fees and platform fees normally associated with other crowdfunding platforms. The objective of our project is to create a reliable application so that every new idea gets life. We plan to design a crowdfunding site which is a blockchain based website. We will provide an easy to use interface for everyone to create and post their ideas on this application. These ideas then become public to everyone. Anyone who wishes to support their ideas can contribute. All these processes are done in an interactive manner.
 
+![Home Page](https://github.com/geetikajhanji11/crowdfunding-dapp/blob/master/images/3.%20Home%20Page%20to%20Discover%20Campaigns.png)
 
 ## Project Features 
 
@@ -39,6 +40,7 @@ Crowdfunding provides an easy way to find cash for innovative project ideas. By 
     Chain ID: 31337
     Currency Symbol: ETH
     ```
+    ![settings](https://github.com/geetikajhanji11/crowdfunding-dapp/blob/master/images/0.%20Metamask%20Network%20Settings.png)
 
 - Run hardhat node
     ```
@@ -52,10 +54,13 @@ Crowdfunding provides an easy way to find cash for innovative project ideas. By 
     ```
     npx hardhat run scripts/deploy.js --network localhost
     ```
-- Connect hardhat with metamask
+- Login to Metamask and import some hardhat accounts to Metamask by using Private Keys
+    ![hardhatnode](https://github.com/geetikajhanji11/crowdfunding-dapp/blob/master/images/hardhat_node.png)
+
+    ![hardhatnode](https://github.com/geetikajhanji11/crowdfunding-dapp/blob/master/images/import.png)
+
 - Run Next.js frontend
     ```
     cd client
     npm run dev
     ```
-```
